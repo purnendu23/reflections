@@ -12,3 +12,9 @@ Q. How is the staging area different from the working directory and the reposito
 A. Staging Area - enables picking only a subset of the changes(files) which are relevant to the next commit.
 So, all the files in the staging area are the ones where new feature has been implemented and can be part
 of the same commit.
+
+
+git diff ---> working_dir & staging_area
+git diff --staged ---> staging_area & commit 1
+git diff commit1 commit2 ---> commit1 & commit2
+
