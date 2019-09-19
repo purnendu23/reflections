@@ -29,3 +29,8 @@ A. If you want to implement a different version of the application in parallel, 
 Later, you will have the option of merging it with the original branch if you want to.
 
 git log --graph --oneline master <br1> <br2> : "To view the graphical representation of the branches"
+
+Q. How do the diagrams help you visualize the branch structure?
+A. The diagrams are very helpful. They help you see all the branches which commits can be reached by each.
+We can also see if there we are in a 'dangling' commit. If we are in such a dangling commit, we can
+start a new branch there with the 'git checkout -b <new_branch_name>' and hence keep track of it.
