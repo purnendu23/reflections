@@ -3,9 +3,9 @@ A. When we initialize a repository using 'git init' a new file '.git' is created
 This is done so that git can track the changes we make to this repo from here on.
 
 
-If you accidentally add a file to the staging area, you can remove it using git reset. 
-For example, if you accidentally add lesson_2_reflections.txt, but don’t want it to be committed yet, 
-run git reset lesson_2_reflections.txt 
+If you accidentally add a file to the staging area, you can remove it using git reset.
+For example, if you accidentally add lesson_2_reflections.txt, but don’t want it to be committed yet,
+run git reset lesson_2_reflections.txt
 and the file will be removed from the staging area, but it will still be in your working directory.
 
 Q. How is the staging area different from the working directory and the repository? What value do you think it offers?
@@ -23,3 +23,7 @@ A. You add (to the staging area) only that subset of files which are relevant to
 
 Q. What are branches?
 A. Branches are just labels for your commits.
+
+Q. What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+A. If you want to implement a different version of the application in parallel, you should make a new branch.
+Later, you will have the option of merging it with the original branch if you want to.
