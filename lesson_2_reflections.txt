@@ -18,3 +18,5 @@ git diff ---> working_dir & staging_area
 git diff --staged ---> staging_area & commit 1
 git diff commit1 commit2 ---> commit1 & commit2
 
+Q. How can you use the staging area to make sure you have one commit per logical change?
+A. You add (to the staging area) only that subset of files which are relevant to the new feature/improvment/change.
