@@ -19,7 +19,7 @@ git diff --staged ---> staging_area & commit 1
 git diff commit1 commit2 ---> commit1 & commit2
 
 Q. How can you use the staging area to make sure you have one commit per logical change?
-A. You add (to the staging area) only that subset of files which are relevant to the new feature/improvment/change.
+A. You add (to the staging area) only that subset of files which are relevant to the new feature/improvement/change.
 
 Q. What are branches?
 A. Branches are just labels for your commits.
@@ -36,3 +36,9 @@ We can also see if there we are in a 'dangling' commit. If we are in such a dang
 start a new branch there with the 'git checkout -b <new_branch_name>' and hence keep track of it.
 
 git show <commit-name> : Really helpful. It shows the difference between this commit and the parent.
+
+Q. What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+A. When we merge two branches together, we keep a track of all the merged branches...
+but now only with the master branch(into which every other branch was merged). We often delete the rest of the branches.
+We use 'git branch -d <branch-name>' command for deleting a branch.
+in the diagram, we still see all the commits we made, but with only the master branch name.
