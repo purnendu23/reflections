@@ -1,0 +1,14 @@
+Q. What happens when you initialize a repository? Why do you need to do it?
+A. When we initialize a repository using 'git init' a new file '.git' is created.
+This is done so that git can track the changes we make to this repo from here on.
+
+
+If you accidentally add a file to the staging area, you can remove it using git reset. 
+For example, if you accidentally add lesson_2_reflections.txt, but don’t want it to be committed yet, 
+run git reset lesson_2_reflections.txt 
+and the file will be removed from the staging area, but it will still be in your working directory.
+
+Q. How is the staging area different from the working directory and the repository? What value do you think it offers?
+A. Staging Area - enables picking only a subset of the changes(files) which are relevant to the next commit.
+So, all the files in the staging area are the ones where new feature has been implemented and can be part
+of the same commit.
