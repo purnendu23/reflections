@@ -1,0 +1,44 @@
+Q. How did viewing a diff between two versions of a file help you see the bug that was introduced?
+A. When we see the difference between the latest version and an older version,
+we can figure out what caused the change in behavior of the application in latest version. We can then
+make the appropriate changes to get the desired application behviour.
+
+Q. How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+A. We know how the application behaved as we built it. A particular feature is probably not usefull in the current version,
+but if we want the same feature or a similar feature in a different project we can always refer to the history of this project
+to find the cooresponding code and use it for our current project.
+
+
+git init --> to make a directory 
+at this stage you have 0-commits.
+
+git log --> to tell how many commits are there
+
+git status -->
+1. tells us what branch are we on (ex. master)
+2. 
+
+
+git diff <commit #1> <commit #2> --> this will show the difference between two versions of the file.
+
+
+Q. What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+A. Manual commit enables us to follow the policy of 'commit when done with a new feature'.
+Otherwise, with automatic commits we will have lots of commits and many of these will be of no relevance at all. Some might be even duplicate (for practical purpose) in nature.
+
+git log --stat  --->
+
+Q. Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+A. This ties to the previious question. We follow the principle 'commit when done with a new feature'. 
+Now, the implementation of this new feature can span across multiple files. Therefore, we should keep track of all the files which have changed.
+
+'git config --global color.ui auto' --> helps to see colored output. nice to have!
+
+Q. How can you use the commands git log and git diff to view the history of files?
+A. Use git log to view all the commit-history. Then select the commit you are interested in --> 'c1' and the one previous to that --> 'c2'.
+Use the git diff command like this:
+git diff 'c1' 'c2'
+
+Q. How might using version control make you more confident to make changes that could break something?
+A. If we make some changes and the code breaks or the feature does not behave as intended,
+we can always revert to an older commit where we had a working application.  
