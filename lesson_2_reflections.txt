@@ -49,3 +49,7 @@ This is especially true when the changes which are being made are in different f
 Manual merging is required when there is confusion over which version to keep.
 This happens when when the same area of code is being changed. Manual merging also gives us the flexibility of
 going a custom merge where we keep some parts from both the versions.
+
+Q. Why might you want to always pull changes manually rather than having Git
+ automatically stay up-to-date with your remote repository?
+A. One reason is definitely what
