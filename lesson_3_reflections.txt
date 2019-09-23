@@ -1,1 +1,5 @@
 
+Q. Describe the differences between forks, clones, and branches. When would you use one instead of another?
+A. forks: for cloning repositories from one account on github to your account.
+clones: To clone repository from your/(an account which allows it) repo to the local computer.
+branches: make a new commit with a name.
