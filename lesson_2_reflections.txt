@@ -42,3 +42,10 @@ A. When we merge two branches together, we keep a track of all the merged branch
 but now only with the master branch(into which every other branch was merged). We often delete the rest of the branches.
 We use 'git branch -d <branch-name>' command for deleting a branch.
 in the diagram, we still see all the commits we made, but with only the master branch name.
+
+Q. What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+A. Git's automatic merging works well when the two merges are operating on different areas of the code.
+This is especially true when the changes which are being made are in different files.
+Manual merging is required when there is confusion over which version to keep.
+This happens when when the same area of code is being changed. Manual merging also gives us the flexibility of
+going a custom merge where we keep some parts from both the versions.
